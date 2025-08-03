@@ -12,10 +12,6 @@ public class LocalLoginManager : MonoBehaviour
     [Header("Room UI")]
     public GameObject adminControls;
     public GameObject guestControls;
-    public TMP_InputField createroomInput;
-    public TMP_InputField joinroomInput;
-    public Button createRoomButton;
-    public Button joinRoomButton;
 
     private string adminEmail = "admin@example.com";
     private string adminPassword = "admin123";
@@ -56,12 +52,5 @@ public class LocalLoginManager : MonoBehaviour
         return isAdmin;
     }
 
-    public string GetRoomNameAdmin()
-    {
-        return createroomInput.text.Trim();
-    }
-    public string GetRoomNameGuest()
-    {
-        return joinroomInput.text.Trim();
-    }
+    
 }
